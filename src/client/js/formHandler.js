@@ -11,16 +11,16 @@ function handleSubmit(event) {
         postData("http://localhost:8081/api", { url: formText }).then(function (response) {
             //updat UI
             document.getElementById("Articleresults").innerHTML = `
-            <strong>Agreement:</strong> ${response.agreement} 
+            <strong>Agreement:</strong> ${response.agreement.toLowerCase()} 
             <br>
-             Subjectivity: ${response.subjectivity}
+             Subjectivity: ${response.subjectivity.toLowerCase()}
             <br>
              Confidence: ${response.confidence}
              <br>
              Global Polarity: ${response.score_tag}
              <br><br> `;
             document.getElementById("interpretation").innerHTML =
-                " <strong>Polarity values interpretation:</strong>   <li> P+: strong positive  </li> <li> P: positive  </li> <li> NEU: neutral  </li> <li> N: negative  </li> N+: strong negative  </li> <li> NONE: without sentiment </li>";
+                " <strong>Polarity values interpretation:</strong>   <li> P+: strong positive  </li> <li> P: positive  </li> <li> NEU: neutral  </li> <li> N: negative  </li> <li> N+: strong negative  </li> <li> NONE: without sentiment </li>";
         });
     } else {
         alert("Article URL is invalid");

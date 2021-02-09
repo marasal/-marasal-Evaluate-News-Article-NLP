@@ -1,0 +1,26 @@
+
+.footer-content {
+   display: flex;
+   align-items: baseline;
+   justify-content: flex-start;
+   flex-direction: column;
+   text-align: center;
+   background-color: #101010;
+   height: 3rem;
+   font-size: 1.3rem;
+ }
+ .social-media {
+   list-style: none;
+   margin: 1rem 0 3rem 0;
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+ }
+ 
+ #SM-li {
+   margin: 0 10px;
+ }
+ .fab {
+   color: rgb(214, 214, 214);
+ }
+ 
