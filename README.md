@@ -8,11 +8,11 @@ The aim of this project is to understand the role build tools and technology are
 
 
 ## The goal of this project is to practice with
-Webserver - Node
-Web application framework for routing - Express
-Build tool - Webpack. 
-External script - Service Worker
-External API - MeaningCloud
-Sass styles
-Environment Variables
-Offline Functionality
+- Webserver - Node
+- Web application framework for routing - Express
+- Build tool - Webpack. 
+- External script - Service Worker
+- External API - MeaningCloud
+- Sass styles
+- Environment Variables
+- Offline Functionality
